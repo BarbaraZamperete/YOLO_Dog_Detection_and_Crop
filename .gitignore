@@ -1,6 +1,6 @@
 # datasets/*
 datasets/coco128/*
 datasets/dataset-kagle/*
-datasets/dog_eye_dataset/*
+
 aligns_image/*
 cropped_images/*
