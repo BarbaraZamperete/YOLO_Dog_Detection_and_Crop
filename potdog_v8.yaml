@@ -1,0 +1,7 @@
+path: ../../Dog Face Data and Labels/dataset
+train: 'train'
+val: 'valid'
+ 
+# class names
+names: 
+  0: 'dogface'

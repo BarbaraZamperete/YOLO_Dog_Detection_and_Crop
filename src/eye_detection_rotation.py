@@ -17,11 +17,12 @@ def detect_eye(paths, output_dir):
         # Verificar se foram detectados pelo menos dois olhos
         if len(eyes) >= 2:
             new_image = rotate_image(image, eyes)
+            output_path = os.path.join(output_dir, image_name)
+            cv2.imwrite(output_path, new_image)
         else:
             print("Não foram detectados olhos suficientes para realizar a rotação.")
         
-        output_path = os.path.join(output_dir, image_name)
-        cv2.imwrite(output_path, new_image)
+        
 
 def rotate_image(image, eyes):
     # Calcular os centros dos olhos

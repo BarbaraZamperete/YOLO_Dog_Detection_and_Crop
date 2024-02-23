@@ -8,12 +8,14 @@ def crop_image(results, paths, output_dir):
     # Process results list
     crop_paths = []
     for result, path in zip(results, paths) :
-
         image = cv2.imread(path)
         image_name = os.path.basename(path)
-
+        print(result.boxes)
         for box in result.boxes:
+            print("box:")
+            print(box)
             xmin, ymin, xmax, ymax = box.xyxy[-1]
+            print("Coordenadas:")
             print(xmin, ymin, xmax, ymax)
             cropped_image = image[int(ymin):int(ymax), int(xmin):int(xmax)]
             
