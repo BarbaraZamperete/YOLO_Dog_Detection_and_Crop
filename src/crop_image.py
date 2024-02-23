@@ -6,7 +6,7 @@ def crop_image(results, paths, output_dir):
 
     os.makedirs(output_dir, exist_ok=True)
     # Process results list
-
+    crop_paths = []
     for result, path in zip(results, paths) :
 
         image = cv2.imread(path)
@@ -18,9 +18,10 @@ def crop_image(results, paths, output_dir):
             cropped_image = image[int(ymin):int(ymax), int(xmin):int(xmax)]
             
             output_path = os.path.join(output_dir, image_name)
+            crop_paths.append(output_path)
             cv2.imwrite(output_path, cropped_image)
         # result.show()  # display to screen
         # result.save(filename='result.jpg')  # save to disk
             
-
+    return crop_paths
 
