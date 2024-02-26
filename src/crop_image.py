@@ -17,11 +17,14 @@ def crop_image(results, paths, output_dir):
             xmin, ymin, xmax, ymax = box.xyxy[-1]
             print("Coordenadas:")
             print(xmin, ymin, xmax, ymax)
-            cropped_image = image[int(ymin):int(ymax), int(xmin):int(xmax)]
+            cropped_image = image[int(xmin):int(xmax), int(ymin):int(ymax)]
             
             output_path = os.path.join(output_dir, image_name)
             crop_paths.append(output_path)
-            cv2.imwrite(output_path, cropped_image)
+            cv2.imshow("cro",cropped_image)
+            cv2.waitKey(0)  # Aguarda até que uma tecla seja pressionada
+            cv2.destroyAllWindows()  # Fecha todas as janelas abertas
+            # cv2.imwrite(output_path, cropped_image)
         # result.show()  # display to screen
         # result.save(filename='result.jpg')  # save to disk
             
