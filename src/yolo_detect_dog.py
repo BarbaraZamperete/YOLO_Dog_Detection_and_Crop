@@ -9,6 +9,6 @@ def predict(paths):
     # results = model.predict('guida.jpeg', classes=16)
     return results
 
-results = predict(["guida2.jpg"])
-results[0].show()
+# results = predict(["images/guida2.jpg"])
+# results[0].show()
 # print(results)
