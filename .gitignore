@@ -2,3 +2,5 @@ datasets/*
 
 aligns_image/*
 cropped_images/*
+images_experimentos/*
+resized_imgs/*
