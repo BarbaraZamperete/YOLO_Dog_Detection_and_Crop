@@ -8,7 +8,7 @@ import glob
 if __name__ == "__main__":
     
 
-    paths = glob.glob("datasets/dataset-kagle/valid/images/*.jpg")
+    paths = glob.glob("images/*jpg")
     paths = [path.replace("\\", "/") for path in paths]
     # print(paths)
     output_dir_crop = "cropped_images"
