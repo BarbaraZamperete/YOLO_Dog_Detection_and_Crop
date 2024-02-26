@@ -7,5 +7,5 @@ results = model.train(
    imgsz=224,
    epochs=10,
    batch=32,
-   name='yolov8n_dogface'
+   name='yolov8n_dogface_oxford'
 )
