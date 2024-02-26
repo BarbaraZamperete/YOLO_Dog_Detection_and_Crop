@@ -40,4 +40,4 @@ def rotate_image(image, eyes):
     
     return rotated_image
 
-# detect_eye(["cropped_images/guida.jpeg"], "aligns_images")
+detect_eye(["cropped_images/scooby-02.jpg"], "aligns_images")

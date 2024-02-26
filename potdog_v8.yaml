@@ -1,7 +1,8 @@
-path: ../../Dog Face Data and Labels/dataset
-train: 'train'
-val: 'valid'
- 
+path: "oxford-iiit-pet"
+train: "treinamento"
+val: "validacao"
+test: "teste"
+
 # class names
-names: 
-  0: 'dogface'
+names:
+  0: "dog"
