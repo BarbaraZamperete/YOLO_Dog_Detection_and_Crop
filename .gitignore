@@ -1,5 +1,4 @@
-# datasets/*
-datasets/coco128/*
+datasets/*
 
 
 aligns_image/*
