@@ -1,3 +1,4 @@
 {
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "cmake.sourceDirectory": "C:/Users/barbarazamperete/Documents/Bárbara/TCC/Experimentos/YOLO-Experimento/ultralytics/examples/YOLOv8-ONNXRuntime-CPP"
 }
