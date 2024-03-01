@@ -8,12 +8,12 @@ import glob
 if __name__ == "__main__":
 
 
-    paths = glob.glob("C:/Users/Bárbara Z/Desktop/TCC-Codes/Datasets/Images_meus_dogs/Train/**/*.jpg", recursive=True)
+    paths = glob.glob("D:/Bah/Documentos/ESTUDO/UFRR/TCC/TCC-Codes/Datasets/Images_meus_dogs/Train/**/*.jpg", recursive=True)
     paths = [path.replace("\\", "/") for path in paths]
-    print(paths)
+    # print(paths)
     # paths = ["images/guida2.jpg"]
-    output_dir_crop = "cropped_images"
-    output_dir_aling = "aligns_images"
+    output_dir_crop = "D:/Bah/Documentos/ESTUDO/UFRR/TCC/TCC-Codes/YOLO_Dog_Detection_and_Crop/cropped_images"
+    # output_dir_aling = "aligns_images"
 
     results = predict(paths)
     # print(results)

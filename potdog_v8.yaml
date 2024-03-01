@@ -1,4 +1,4 @@
-path: "oxford-iiit-pet"
+path: "D:/Bah/Documentos/ESTUDO/UFRR/TCC/TCC-Codes/Datasets/oxford-iiit-pet"
 train: "treinamento"
 val: "validacao"
 test: "teste"

@@ -4,7 +4,7 @@ import os
 
 def detect_eye(paths, output_dir):
     # Carregar o classificador em cascata para detecção de olhos
-    eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+    eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
     os.makedirs(output_dir, exist_ok=True)
 
@@ -40,4 +40,4 @@ def rotate_image(image, eyes):
     
     return rotated_image
 
-detect_eye(["cropped_images/scooby-02.jpg"], "aligns_images")
+# detect_eye(["cropped_images/zoe-03_1_1.jpg", "cropped_images/zoe-03_1_2.jpg"], "aligns_images")
